@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calculator {
+    width: 320px;
+    height: 480px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  
+  .display {
+    background-color: #444;
+    color: #fff;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 2px solid #222;
+    min-height: 100px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    height: calc(100% - 100px);
+  }
+  
+  .button {
+    border: 1px solid #444;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #666;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+  
+  .button:active {
+    background-color: #555;
+    transform: scale(0.95);
+  }
+  
+  .button.operator {
+    background-color: #d48a00;
+  }
+  
+  .button.operator:active {
+    background-color: #b37300;
+  }
+  
+  .button.clear {
+    background-color: #e74c3c;
+  }
+  
+  .button.clear:active {
+    background-color: #c0392b;
+  }
+  
+  .button.equals {
+    background-color: #27ae60;
+    grid-column: span 2;
+  }
+  
+  .button.equals:active {
+    background-color: #1e8449;
+  }
+  
+  /* Made by Ketener */
+  footer {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
